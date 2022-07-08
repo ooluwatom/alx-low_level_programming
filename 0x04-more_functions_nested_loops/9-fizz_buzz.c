@@ -1,41 +1,28 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
-  * main - Prints a Fizz Buzz program
-  *
-  * Return: Always 0 (Success)
-  */
+* main - prints "Fizz" for factors of 3,
+* prints "Buzz" for factors of 5,
+* prints "FizzBuzz" for factors of both 3 and 5
+* for numbers 1-100
+* Return: 0;
+*/
 int main(void)
 {
 	int x;
 
-	for (x = 1; x <= 100; x++)
+	for (x = 1; x <= 99; x++)
 	{
-		if ((x % 3 == 0) && (x % 5 == 0))
-		{
-			printf("FizzBuzz");
-		}
+		if (x % 15 == 0)
+			printf("FizzBuzz ");
 		else if (x % 3 == 0)
-		{
-			printf("Fizz");
-		}
+			printf("Fizz ");
 		else if (x % 5 == 0)
-		{
-			printf("Buzz");
-		}
+			printf("Buzz ");
 		else
-		{
-			printf("%d", x);
-		}
-
-		if (x != 100)
-		{
-			printf(" ");
-		}
+			printf("%i ", x);
 	}
 
-	printf("\n");
-
+	printf("Buzz\n");
 	return (0);
 }
