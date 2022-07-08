@@ -1,13 +1,39 @@
-int _putchar(char c);
-void print_alphabet(void);
-void print_alphabet_x10(void);
-int _islower(int c);
-int _isalpha(int c);
-int print_sign(int n);
-int _abs(int);
-int print_last_digit(int);
-void jack_bauer(void);
-void times_table(void);
-int add(int, int);
-void print_to_98(int n);
-void print_times_table(int n);
+#ifndef MAIN_H
+#define MAIN_H
+
+int _putchar(char);
+
+/* 0-isupper.c */
+int _isupper(int);
+
+/* 1-isdigit.c */
+int _isdigit(int);
+
+/* 2-mul.c */
+int mul(int a, int b);
+
+/* 3-print_numbers.c */
+void print_numbers(void);
+
+/* 4-print_most_numbers.c */
+void print_most_numbers(void);
+
+/* 5-more_numbers.c */
+void more_numbers(void);
+
+/* 6-print_line.c */
+void print_line(int n);
+
+/* 7-print_diagonal.c */
+void print_diagonal(int);
+
+/* 8-print_square.c */
+void print_square(int size);
+
+/* 10-print-triangle.c */
+void print_triangle(int size);
+
+/* 101-print_number.c */
+void print_number(int n);
+
+#endif
