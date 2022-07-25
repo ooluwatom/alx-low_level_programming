@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 *_strcat - concatinates 2 str
 *@dest: destination pointer
