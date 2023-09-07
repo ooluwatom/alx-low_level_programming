@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 int recurse_helper(int *array, size_t left,
-size_t right, int value, ssize_t *match);
+size_t right, int value, size_t *match);
 
 /**
  * advanced_binary - to search for value in array of sorted ints
@@ -13,7 +13,7 @@ size_t right, int value, ssize_t *match);
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	ssize_t match = -1;
+	size_t match = -1;
 
 	if (array == NULL)
 		return (-1);
@@ -32,7 +32,7 @@ int advanced_binary(int *array, size_t size, int value)
  * Return: index of found value; or -1 if not found
  */
 int recurse_helper(int *array, size_t left,
-size_t right, int value, ssize_t *match)
+size_t right, int value, size_t *match)
 {
 	size_t i = left, mid;
 
